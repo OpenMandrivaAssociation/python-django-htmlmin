@@ -36,8 +36,8 @@ rm -rf %{pypi_name}.egg-info
 %install
 %py3_install
 
-%check
-%{__python3} setup.py test
+#%%check
+# No tets provided
 
 %files -n python-%{pypi_name}
 %doc README.rst
